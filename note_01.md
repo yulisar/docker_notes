@@ -4,6 +4,7 @@ The WSL 2 docker-desktop-data vm disk image would normally reside in:
 ```%USERPROFILE%\AppData\Local\Docker\wsl\data\ext4.vhdx```
 
 1. List existing WSL:
+
 ```wsl --list -v```
 
 You should be able to see, make sure the STATE for both is Stopped.
