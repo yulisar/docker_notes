@@ -6,9 +6,12 @@ Change docker image location on Windows docker for desktop:
 
 You should be able to see, make sure the STATE for both is Stopped.
 
+```
   NAME                   STATE           VERSION
 * docker-desktop         Stopped         2
   docker-desktop-data    Stopped         2
+  
+```  
 
 2. wsl --export docker-desktop-data "D:\Docker\wsl\data\docker-desktop-data.tar"
 
