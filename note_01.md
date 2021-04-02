@@ -18,7 +18,9 @@ You should be able to see, make sure the STATE for both is Stopped.
 
 2. Export docker-desktop-data into a file
 
-```wsl --export docker-desktop-data "D:\Docker\wsl\data\docker-desktop-data.tar"```
+```
+wsl --export docker-desktop-data "D:\Docker\wsl\data\docker-desktop-data.tar
+```
 
 3. Unregister docker-desktop-data from wsl, note that after this, your ext4.vhdx file would automatically be removed (so back it up first if you have important existing image/container):
 
@@ -28,7 +30,9 @@ wsl --unregister docker-desktop-data
 
 4. Import the docker-desktop-data back to wsl, but now the ext4.vhdx would reside in different drive/directory:
 
-```wsl --import docker-desktop-data "D:\Docker\wsl\data" "D:\Docker\wsl\data\docker-desktop-data.tar" --version 2```
+```
+wsl --import docker-desktop-data "D:\Docker\wsl\data" "D:\Docker\wsl\data\docker-desktop-data.tar" --version 2
+```
 
 5. Start the Docker Desktop again and it should work
 
