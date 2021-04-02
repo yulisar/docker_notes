@@ -1,4 +1,4 @@
-#Change docker image location on Windows docker for desktop:
+# Change docker image location on Windows docker for desktop:
 
 The WSL 2 docker-desktop-data vm disk image would normally reside in: 
 
