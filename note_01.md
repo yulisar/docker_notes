@@ -1,9 +1,11 @@
 #Change docker image location on Windows docker for desktop:
 
-The WSL 2 docker-desktop-data vm disk image would normally reside in: ```%USERPROFILE%\AppData\Local\Docker\wsl\data\ext4.vhdx```
+The WSL 2 docker-desktop-data vm disk image would normally reside in: 
+```%USERPROFILE%\AppData\Local\Docker\wsl\data\ext4.vhdx```
 
 1. List existing WSL:
 ```wsl --list -v```
+
 You should be able to see, make sure the STATE for both is Stopped.
 ```
   NAME                   STATE           VERSION
@@ -11,6 +13,7 @@ You should be able to see, make sure the STATE for both is Stopped.
   docker-desktop-data    Stopped         2
   
 ```  
+
 2. Export docker-desktop-data into a file
 
 ```wsl --export docker-desktop-data "D:\Docker\wsl\data\docker-desktop-data.tar"```
